@@ -1,0 +1,72 @@
+<html ng-app="testapp">
+
+  <head>
+    <style>
+      body {
+        font-size: 22px;
+      }
+
+      .home {
+        padding: 15px;
+        background-color: #E6FFFF;
+        height: 100%;
+      }
+
+      .home-tabs {
+        text-align: center; 
+        padding: 15px 0;
+        background-color: #FFEAE6;
+      }
+
+      .home-tabs a {
+        margin: 0 10px;
+      }
+
+      .home-view {
+        padding: 10px;
+        background-color: #FFFFE6;
+      }
+
+      .master {
+        float: left;
+        width: 20%;
+        background-color: #E6FFE6;
+        margin-right: 10px;
+        /*height: 100%;*/
+      }
+
+      .detail {
+        float: right;
+        width: 78%;
+        background-color: #E6FFE6;
+        /*height: 100%;*/
+      }
+
+      .tabs {
+        display: inline-block;
+        margin: 5px 10px;
+        padding: 5px;
+        background-color: #FCE6FF;
+        width: 65px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .tab-content {
+        margin: 5px 10px;
+        padding: 15px;
+        background-color: #FCE6FF;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div ui-view></div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+  
+  <script src="./angular-ui-router.js"></script>
+  <script src="./app.js"></script>
+</html>

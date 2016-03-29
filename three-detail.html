@@ -1,0 +1,4 @@
+<div class="tabs" ng-repeat="n in arr track by $index" 
+	 ng-click="tabSelected($index+1)">{{$index + 1}}</div>
+<div style="display:inline-block;font-size:14px;"><-- Takes 2 seconds to resolve</div>
+<div class="tab-content" ui-view>tab content</div>

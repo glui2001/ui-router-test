@@ -1,0 +1,20 @@
+<h1>Three</h1>
+
+<div>{{title}}</div>
+<br>
+<div>{{desc}}</div>
+<br>
+
+<div class="master">
+Number of tabs
+	<ul>
+	   <li ng-repeat="master in masterList">
+	     <a ui-sref="home.three.detail( {val:master.val} )">{{master.id}}</a>
+	   </li>
+	</ul>
+</div>
+<div class="detail" ui-view>
+    Dynamic number of tabs show up here.
+</div>
+
+<div style="clear:both;"/>

@@ -1,0 +1,19 @@
+<h1>Two</h1>
+
+<div>{{title}}</div>
+<br>
+<div>{{desc}}</div>
+<br>
+
+<div class="master">
+	<ul>
+	   <li ng-repeat="master in masterList">
+	     <a ui-sref="home.two.detail( {val:master.val} )">{{master.id}} - val: {{master.val}}</a>
+	   </li>
+	</ul>
+</div>
+<div class="detail" ui-view>
+  Select item from master list
+</div>
+
+<div style="clear:both;"/>
